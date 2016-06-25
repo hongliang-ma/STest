@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.dagger.dtest</groupId>
+		<artifactId>dtest-bom</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<groupId>com.dagger.dtest</groupId>
+	<artifactId>dtest-core</artifactId>
+	<version>${project.build.version}</version>
+	<packaging>jar</packaging>
+	<name>dtest core</name>
+	<url>http://maven.apache.org</url>
+
+  <dependencies>
+		<dependency>
+		  <groupId>com.dagger.base</groupId>
+		  <artifactId>dagger-tool</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mozilla</groupId>
+			<artifactId>rhino</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+		</dependency>
+  </dependencies>
+</project>
